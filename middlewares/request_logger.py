@@ -29,6 +29,6 @@ class RequestLogger(BaseHTTPMiddleware):
         response = await call_next(request)
         end = time.time()
         logger.info(
-            f"method={request.method} | {request.url} | {response.status_code} | {end - start}s"
+            f"method={request.method} | {request.url} | {request.state.request_id} | {response.status_code} | {end - start}s"
         )
         return response
