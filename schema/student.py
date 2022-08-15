@@ -9,3 +9,6 @@ class StudentSchema(BaseModel):
     name: str
     department: str
     year: int
+
+    class Config:
+        orm_mode = True
