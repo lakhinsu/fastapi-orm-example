@@ -10,6 +10,11 @@ This repo contains example code for following points,
 - Auto migrate the models to create the desired tables automatically in the database (using [Alembic](https://alembic.sqlalchemy.org/en/latest/)).
 - Creating FastAPI request models (schema).
 - Example code for CRUD operations.
+- Logging
+- Request ID Middleware
+- Request Logging Middleware
+- Reading configuration from environment
+- Samples for Dockerfile and docker-compose files
 
 ## Run locally
 ### API Service
